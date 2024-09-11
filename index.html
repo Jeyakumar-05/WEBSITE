@@ -25,12 +25,14 @@
         .section1 {
             width: 70%;
             height: 10rem;
+            /* border-radius: 45%; */
             background: #DBE6F6;  /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #C5796D, #86898e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            gap: 30px;
+            justify-content: start;
             align-items: center;
             box-shadow:
             6.7px 6.7px 5.3px rgba(0, 0, 0, 0.069),
@@ -40,10 +42,19 @@
 
         .profile-img-section {
             width: 30%;
-            height: 100%;
+            height: 80%;
             display: flex;
-            justify-content: start;
+            justify-content: center;
             align-items: center;
+            /* padding-left: 4px;
+            padding-right: 4px; */
+
+            /* background: rgba( 255, 255, 255, 0.05 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 1.5px );
+            -webkit-backdrop-filter: blur( 1.5px );
+            border-radius: 50%; 
+            border: 1px solid rgba( 255, 255, 255, 0.18 ); */
         }
 
         .profile-data {
@@ -58,11 +69,13 @@
             height: 8rem;
             width: 8rem;
             border-radius: 50%;
+
+            
         }
 
         .section2 {
             width: 70%;
-            height: 9rem;
+            height: 8rem;
             /* border: 1px solid bisque; */
             display: flex;
             flex-direction: column;
@@ -72,7 +85,7 @@
 
         .section3 {
             width: 70%;
-            height: 22rem;
+            height: 13rem;
             /* border: 1px solid bisque; */
             display: flex;
             flex-direction: column;
@@ -82,7 +95,7 @@
 
         .section4 {
             width: 70%;
-            height: 22rem;
+            height: 17rem;
             /* border: 1px solid bisque; */
             display: flex;
             flex-direction: column;
@@ -90,8 +103,48 @@
             align-items: start;
         }
 
+        .section5{
+            width: 70%;
+            height: 13rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .section6{
+            width: 70%;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+        .section7{
+            width: 70%;
+            height: 9rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .section8{
+            width: 70%;
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-weight: bold;
+            background: #DBE6F6;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #C5796D, #DBE6F6);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #C5796D, #86898e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+
         .section-title {
-          
             color: rgb(150, 55, 55);
             font-weight: bold;
         }
@@ -100,11 +153,12 @@
             width: 100%;
             border: 1px solid gray;
             border-collapse: collapse;
+        
         }
 
         th,
         td {
-            padding: 1rem;
+            padding: 0.2rem;
             border: 1px solid gray;
         }
 
@@ -112,7 +166,64 @@
             font-weight: bold;
             color:rgb(48, 35, 35) ;
         }
+
+        li{
+            list-style: circle;
+            margin-left: 2rem;
+        }
+        
+        .spaced{
+            margin-left:30px;
+        }
+
+        /* From Uiverse.io by andrew-demchenk0 */ 
+        .button-ph {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        border: none;
+        background-color: #30C04F;
+        }
+
+        .button-ph:hover {
+        background-color: #2bac47;
+        }
+
+
+        
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+*::-webkit-scrollbar
+{
+	width: 8px;
+    height: 8px;
+	background-color: #F5F5F5;
+    
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(174, 176, 181)),
+									   color-stop(0.72, rgb(146, 149, 153)),
+									   color-stop(0.86, rgb(97, 99, 105)));
+}
     </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -120,7 +231,7 @@
     <div class="section1">
 
         <div class="profile-img-section">
-        <img src = "img/emo.jpg" alt="myimage" class = "profile-img"> 
+        <img src = "./img/IMG_88281.jpg" alt="myimage" class = "profile-img"> 
         </div>
 
         <div class="profile-data">
@@ -150,12 +261,12 @@
 
         <table class="ed-table">
             <tr>
-                <td>Qualification</td>
-                <td>Institution</td>
-                <td>Year</td>
+               <td><b>Qualification</b></td>
+                <td><b>Institution</b></td>
+                <td><b>Year</b></td>
             </tr>
             <tr>
-                <td>Bachelor of Technology (B.E)</td>
+                <td>Bachelor of Engineering (B.E)</td>
                 <td>Sri Shakthi Institute of Engineering and Technology</td>
                 <td>2022-2026</td>
             </tr>
@@ -171,33 +282,84 @@
             </tr>
 
         </table>
-
     </div>
-    <div class="section4">
+
+    <div class = "section7"> 
+        <h1 class=" section-title">Skills</h1>
+        <p>
+            <span class = "companies"> Technical Skills</span>
+            <span class = "spaced">Java, Python Basic, JavaScript, SQL.</span>
+        </p>
+        <p>
+            <span class = "companies">  Soft Skills</span>
+            <span style= "margin-left:70px;">Problem-Solving, Communication, Adaptability.</span> 
+        </p>
+        <p>
+            <span class = "companies"> Software/Tools</span>
+            <span class = "spaced">GitHub, IntelliJ IDEA, Visual Studio Code, MySQL Workbench.</span>
+        </p>
+    </div>
+
+        <div class="section4">
     <h1 class="section-title">
         Internships
     </h1>
     <p>
         <span class="companies">Intel® Unnati Industrial Training Program 2024 Participant </span>
         <li>
-        Assignment: Assigned to the "Detect Pixelated Image & Correct it" problem statement, focusing on developing a 
-        machine learning-based solution for image restoration.
+            Engineered a machine learning-based solution for image restoration, addressing the ”Detect Pixelated Image
+            & Correct it” problem statement. Participated in an Intel-led training session to gain insights into project
+            requirements and solution strategies
         </li>
-        <li>
-        Training Session: Attended an online training session hosted by an Intel Executive, covering project requirements and 
-        approaches to solution development. 
-       </li>
+        
     </p>
     <p>
         <span class="companies">iTech Hackfest 2023 – A National Level Hackathon</span>
         <li>
-            itechhackfest 2023: Participated in the regional round at PSG College of Technology and finals at PSG Institute of 
-            Technology and Applied Research. Developed skills in problem-solving, teamwork, and creative project development 
-            under pressure. Met industry professionals and peers who challenged my perspectives and fostered innovative thinking. 
+            Competed in regional and final rounds at PSG College of Technology and PSG Institute of Technology, enhancing
+            problem-solving, teamwork, and creative skills while networking with industry professionals and peers.
         </li>
     </p>
 </div>
 
-    <div class="section5"></div>
+    <div class="section5">
+        <h1 class="section-title">
+            Projects
+        </h1>
+        <p>
+            <span class="companies">ATM Simulation Project. </span>
+            Developed a Java-based ATM simulation with user authentication, balance inquiry,
+            withdrawals, deposits, and transaction history. Utilized OOP principles and file I/O for data storage, designing key
+            classes and a user-friendly console interface.
+        </p>
+        <p>
+            <span class="companies"> Detect Pixelated Image and Correct it.</span> Developed a Python-based solution utilizing OpenCV for image processing, TensorFlow/Keras for deep learning-based image restoration, and scikit-learn for feature extraction. Implemented
+            a pixelation detection model and image restoration technique to atomically enhance visual quality
+        </p>
+    </div>
+
+    <div class = "section6">
+        <h1 class = "section-title">Certifications</h1>
+
+        <li> Intermediate Coding in Java (Unstop).</li>
+        <li>IBM Python for Data Science Certification (IBM Badge Awarded).</li>
+        <li>IBM SQL and Relational Databases Certification.</li>
+        <li>NPTEL Elite with Silver Badge in Internet of Things (IoT).</li>
+
+    </div>
+
+    <div class = "section8">
+        <!-- <a href = "tel:+91 9384354367">
+         <i class="fa-solid fa-phone text-white"></i>
+        </a> -->
+       
+<button class="button-ph">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="20" fill="none" class="svg-icon"><path stroke-width="2" stroke-linecap="round" stroke="#fff" fill-rule="evenodd" d="m24.8868 19.1288c-1.0274-.1308-2.036-.3815-3.0052-.7467-.7878-.29-1.6724-.1034-2.276.48-.797.8075-2.0493.9936-2.9664.3258-1.4484-1.055-2.7233-2.3295-3.7783-3.7776-.6681-.9168-.4819-2.1691.3255-2.9659.5728-.6019.7584-1.4748.4802-2.2577-.3987-.98875-.6792-2.02109-.8358-3.07557-.2043-1.03534-1.1138-1.7807-2.1694-1.77778h-3.18289c-.60654-.00074-1.18614.25037-1.60035.69334-.40152.44503-.59539 1.03943-.53345 1.63555.344 3.31056 1.47164 6.49166 3.28961 9.27986 1.64878 2.5904 3.84608 4.7872 6.43688 6.4356 2.7927 1.797 5.9636 2.9227 9.2644 3.289h.1778c.5409.0036 1.0626-.2 1.4581-.569.444-.406.6957-.9806.6935-1.5822v-3.1821c.0429-1.0763-.7171-2.0185-1.7782-2.2046z" clip-rule="evenodd"></path></svg>
+</button>
+
+
+
+
+    </div>
 </body>
 </html>
