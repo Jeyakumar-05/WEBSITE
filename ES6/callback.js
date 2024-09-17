@@ -40,10 +40,10 @@ async function API(){
 
 async function APIDATA(){
     const apidata = await API();
-    // const structuredata = await apidata.map((datas) => {console.log(datas)}); 
-    const specificName = await apidata.filter( (datas) => datas.name === "Gayle Spinka");
-    console.log(specificName); 
-    // console.log(apidata);
+    const structuredata = await apidata.map((datas) => {console.log(datas)}); 
+    // const specificName = await apidata.filter( (datas) => datas.name === "Gayle Spinka");
+    // console.log(specificName); 
+
 } 
 
 APIDATA();
